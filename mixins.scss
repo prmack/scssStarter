@@ -1,0 +1,37 @@
+@mixin border-radius ($radius) {
+    -moz-border-radius : $radius;
+    -webkit-border-radius : $radius;
+    border-radius : $radius;
+}
+@mixin text-shadow {
+    text-shadow : 0 1px 2px rgba(0,0,0,.50);
+}
+@mixin box-border {
+    -moz-box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;
+}
+@mixin shadow ($x: 0, $y:1px, $blur:5px,$color:rgba(000,000,000,0.1)) {
+    -moz-box-shadow : $x $y $blur $color;
+    -webkit-box-shadow : $x $y $blur $color;
+    box-shadow : $x $y $blur $color;
+}
+@mixin border ($width: 1px 1px 1px 1px, $color: rgba(222, 225, 225)) {
+    border-width : $width;
+    border-style : solid;
+    border-color : $color;
+}
+@mixin casefont($font-size:12px, $font-family:$headerfont) {
+    font-size : $font-size;
+    text-transform : uppercase;
+    font-family : $font-family;
+}
+@mixin placeholder($color:lighten($bodycolor, 25%), $font-style:italic) {
+    ::placeholder {
+        color : $color;
+        font-style : $font-style;
+    }
+}
+@mixin ninja {
+    display : none;
+}
