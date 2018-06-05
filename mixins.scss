@@ -16,7 +16,7 @@
     -webkit-box-shadow : $x $y $blur $color;
     box-shadow : $x $y $blur $color;
 }
-@mixin border ($width: 1px 1px 1px 1px, $color: rgba(222, 225, 225)) {
+@mixin border ($width: 1px 1px 1px 1px, $color: rgba(222, 225, 225, 1)) {
     border-width : $width;
     border-style : solid;
     border-color : $color;
